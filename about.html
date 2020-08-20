@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport">
+        <title>MyCOVID Risk App</title>
+
+        <!-- CSS -->
+        <!-- Add Material font (Roboto) and Material icon as needed -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Roboto+Mono:300,400,700|Roboto+Slab:300,400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Add Material CSS, replace Bootstrap CSS -->
+        <link href="css/material.min.css" rel="stylesheet">
+        <link href="scss/custom.scss" rel="stylesheet">
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <!-- Then Material JavaScript on top of Bootstrap JavaScript -->
+        <script src="js/material.min.js"></script>
+    </head>
+    <body class="bg-light">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary mb-3">
+            <div class="container">
+                <a href="index.html" class="navbar-brand mr-3">MyCOVID Risk</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link active">About</a>
+                    </div>
+                </div>
+            </div>    
+        </nav>
+    <div class="container">
+        <dl class="row">
+            <dt class="col-sm-3">Data Sources</dt>
+            <dd class="col-sm-9">XYZ</dd>
+          
+            <dt class="col-sm-3">Methods</dt>
+            <dd class="col-sm-9">
+              <p>Binomial probability</p>
+            </dd>
+          
+            <dt class="col-sm-3">Known limitations</dt>
+            <dd class="col-sm-9">
+                <p>The reported state positivity rate is very likely a biased estimate of the true state rate.</p>
+                <p>The calculations assume that all attendees have the same probability of being COVID19 positive, and that this probability is the reported positivity rate for the state. These are very strong assumptions. They are highly unlikely to hold in practice.  <em>Caveat emptor</em>.</p>
+                <p>The probability that at least one person attending the social gathering is COVID19 positive is not the same thing as the probability that you get infected if you attend the social gathering.  Infected persons may, or may not, be contagious.  Even if contagious, you may, or may not, get infected depending on your behaviour, and theirs.</p>
+                <p>As surely as night follows day, we are sure to have missed other limiations.</p>
+            </dd>
+          
+            <dt class="col-sm-3 text-truncate">Credits</dt>
+            <dd class="col-sm-9 mb-5">Bootstrap 4, Daemonite's Material UI, Other.</dd>
+        </dl>
+        <footer>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Copyright &copy; 2020 MyCOVID Risk</p>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <a href="terms.html" class="text-dark">Terms of Use</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+  </body>
+</html>
