@@ -29,6 +29,10 @@
     <!--meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"-->
 </head>
 <body class="bg-light">
+    @{
+        //get the page name by looking at the action, as page names are coded to actions
+        var pageName = ViewContext.RouteData.Values["action"].ToString();
+    }
     <nav class="navbar navbar-expand-md navbar-dark bg-primary mb-3">
         <div class="container">
             <a href="/" class="navbar-brand mr-3">MyCOVID Risk</a>
@@ -37,9 +41,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
-                    <a href="/" class="nav-item nav-link active">Home</a>
-                    <a href="/home/about" class="nav-item nav-link">About</a>
-                    <a href="/home/terms" class="nav-item nav-link">Terms of Use</a>
+                    <a href="/" class="nav-item nav-link @(pageName=="Index" ? "active" : "")">Home</a>
+                    <a href="/home/about" class="nav-item nav-link @(pageName=="About" ? "active" : "")">About</a>
+                    <a href="/home/terms" class="nav-item nav-link @(pageName=="Terms" ? "active" : "")">Terms of Use</a>
                 </div>
             </div>
         </div>

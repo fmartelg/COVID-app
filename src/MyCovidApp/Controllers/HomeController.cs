@@ -47,6 +47,8 @@ namespace MyCovidApp.Controllers
             return View(responseModel);
         }
 
+        /*
+         * This method is for debugging the Risk.cshtml page and make sure it looks good
         [HttpGet]
         public IActionResult TempRisk()
         {
@@ -59,11 +61,7 @@ namespace MyCovidApp.Controllers
             };
             return View("Risk", responseModel);
         }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
+        */
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

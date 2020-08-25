@@ -15,7 +15,7 @@
             Probability that at least one guest has COVID-19
         </div>
         <div class="col">
-            %@String.Format("{0:0.00}", Model.probabilityAtLeastOne)
+            @String.Format("{0:0.00}", Model.probabilityAtLeastOne)%
         </div>
     </div>
     <div class="row">
@@ -24,7 +24,7 @@
     <div class="row">
         <div class="col" style="text-align:left;">Probability that no guest has COVID-19</div>
         <div class="col justify-content-lg-end">
-            %@String.Format("{0:0.00}", Model.probabilityZero)
+            @String.Format("{0:0.00}", Model.probabilityZero)%
         </div>
     </div>
     <div class="row">
@@ -33,7 +33,7 @@
     <div class="row">
         <div class="col" style="text-align:left;">Estimated Positivity Rate</div>
         <div class="col">
-            %@String.Format("{0:0.00}", Model.positivityRate)
+            @String.Format("{0:0.00}", Model.positivityRate)%
         </div>
     </div>
     <div class="row">
